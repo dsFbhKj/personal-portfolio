@@ -25,12 +25,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### `npm run eject`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single-build dependency from your project.
 
 ## Deployment
 
-This website is depolyed through Netlify: [https://www.netlify.com/]
+This website is deployed through Netlify: [https://www.netlify.com/]
 
-## Advanced Libriaies and Features
+## Advanced Libraries and Features
 
- Utilized an approved unique platform and presentation library like D3.js, Daisy UI, Animate On Scroll (AOS), and React Spring.
+ Utilized an approved unique platform and presentation library like D3.js, Three.JS, Daisy UI, Animate On Scroll (AOS), and React Spring.
