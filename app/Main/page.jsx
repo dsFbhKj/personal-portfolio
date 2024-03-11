@@ -1,12 +1,17 @@
 'use client';
 import { useSpring, animated } from '@react-spring/web'; //imported animation for react-spring
-import Link from 'next/link';
-// import Voronoi from './voronoi';
+import AOS from 'aos'; //need both the import
+import 'aos/dist/aos.css'; //and css for AOS to work
+import { useEffect } from 'react';
 
-export default function Home() {
+export default function Main() {
   const [springs, api] = useSpring(() => ({
     from: { x: 0 },
   }));
+
+  useEffect(() => {
+    AOS.init({});
+  }, []);
 
   const handleClick = () => {
     api.start({
@@ -21,22 +26,17 @@ export default function Home() {
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <div class='scene h-screen w-screen flex justify-center items-center bg-black'>
-        <div class='wrap relative w-1000 h-1000 transform -translate-x-1/2 -translate-y-1/2 transform-style-preserv-3d animate-move infinite linear'>
-          <div class='wall wall-right absolute w-full h-full opacity-0 animate-fade infinite linear'></div>
-          <div class='wall wall-left absolute w-full h-full opacity-0 animate-fade infinite linear'></div>
-          <div class='wall wall-top absolute w-full h-full opacity-0 animate-fade infinite linear'></div>
-          <div class='wall wall-bottom absolute w-full h-full opacity-0 animate-fade infinite linear'></div>
-          <div class='wall wall-back absolute w-full h-full opacity-0 animate-fade infinite linear'></div>
-        </div>
-        <div class='wrap relative w-1000 h-1000 transform -translate-x-1/2 -translate-y-1/2 transform-style-preserv-3d animate-move infinite linear delay-600s'>
-          <div class='wall wall-right absolute w-full h-full opacity-0 animate-fade infinite linear delay-600s'></div>
-          <div class='wall wall-left absolute w-full h-full opacity-0 animate-fade infinite linear delay-600s'></div>
-          <div class='wall wall-top absolute w-full h-full opacity-0 animate-fade infinite linear delay-600s'></div>
-          <div class='wall wall-bottom absolute w-full h-full opacity-0 animate-fade infinite linear delay-600s'></div>
-          <div class='wall wall-back absolute w-full h-full opacity-0 animate-fade infinite linear delay-600s'></div>
-        </div>
-      </div>
+      {/* Add react Soring Animation */}
+      <animated.div
+        onClick={handleClick}
+        style={{
+          width: 80,
+          height: 80,
+          background: '#ff6d6d',
+          borderRadius: 8,
+          ...springs,
+        }}
+      />
     </main>
   );
 }

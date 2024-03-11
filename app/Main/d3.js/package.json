@@ -1,0 +1,14 @@
+{
+  "name": "d63625004870fd90",
+  "main": "d63625004870fd90@412.js",
+  "version": "412.0.0",
+  "homepage": "https://observablehq.com/d/d63625004870fd90",
+  "author": {
+    "name": "G-DEV",
+    "url": "https://observablehq.com/@georgi"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

@@ -6,6 +6,8 @@ import 'aos/dist/aos.css'; //and css for AOS to work
 import { useEffect } from 'react';
 import Link from 'next/link';
 
+// use this https://gist.github.com/veltman/017a2093623e1bf3ae041dd3380578cb
+
 export default function Home() {
   const [springs, api] = useSpring(() => ({
     from: { x: 0 },
