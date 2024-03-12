@@ -3,7 +3,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { Canvas } from '@react-three/fiber';
 import { Experience } from './components/Experience';
 
 const router = createBrowserRouter([
