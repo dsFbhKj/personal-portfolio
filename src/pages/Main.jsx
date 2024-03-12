@@ -27,9 +27,18 @@ export default function Main() {
     <>
       {/* Tested AOS Div animation wrapping it in daisy button */}
       {/* Tested out a button using daisy ui(tailwind) */}
-      <button class='inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900'>
-        Button
-      </button>
+      <button className='btn'>Button</button>
+      <details className='dropdown'>
+        <summary className='m-1 btn'>open or close</summary>
+        <ul className='p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52'>
+          <li>
+            <a>Item 1</a>
+          </li>
+          <li>
+            <a>Item 2</a>
+          </li>
+        </ul>
+      </details>
       <button
         data-aos='fade-up-right'
         data-aos-duration='3000'
