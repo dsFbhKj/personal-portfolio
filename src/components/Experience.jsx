@@ -6,9 +6,9 @@ import {
 } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { useControls } from 'leva';
-import { Avatar } from './Avatar';
+import  Avatar  from './Avatar';
 
-export const Experience = () => {
+const Experience = () => {
   const { animation } = useControls({
     animation: {
       value: 'Hello',
@@ -47,3 +47,5 @@ export const Experience = () => {
     </>
   );
 };
+
+export default Experience;

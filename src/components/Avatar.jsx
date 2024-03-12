@@ -8,7 +8,7 @@ import { useControls } from 'leva';
 import { useAnimations, useFBX, useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
-export function Avatar(props) {
+export default function Avatar(props) {
   const { animation } = props;
   const { headFollow, cursorFollow, wireframe } = useControls({
     headFollow: false,
