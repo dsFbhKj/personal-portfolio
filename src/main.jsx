@@ -1,10 +1,21 @@
+import './styles/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import { Canvas } from '@react-three/fiber';
+import { Experience } from './components/Experience';
+
+const router = createBrowserRouter([
+  { path: '/', element: <Experience /> },
+  // { path: '/hyperspace', element: <Hyperspace /> },
+  // { path: '/world', element: <World /> },
+  // { path: '/main', element: <Main /> },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
