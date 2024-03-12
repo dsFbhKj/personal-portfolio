@@ -37,7 +37,7 @@ export function Avatar(props) {
     }
     if (cursorFollow) {
       const target = new THREE.Vector3(state.mouse.x, state.mouse.y, 1);
-      group.current.getObjectByName('Head').lookAt(target);
+      group.current.getObjectByName('Neck').lookAt(target);
     }
   });
 
