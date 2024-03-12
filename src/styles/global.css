@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -17,6 +27,7 @@
 }
 
 body {
+  margin: 0;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,
