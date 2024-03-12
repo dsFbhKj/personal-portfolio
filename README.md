@@ -25,13 +25,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Learn More
 
-The Vite documentation walks the user through depolyment options [Vite Deployment](https://vitejs.dev/guide/static-deploy)
+The Vite documentation walks the user through deployment options [Vite Deployment](https://vitejs.dev/guide/static-deploy)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Deployment
 
-This website is depolyed through [Netlify](https://www.netlify.com/) 
+This website is deployed through [Netlify](https://www.netlify.com/) 
 
 ## Advanced Libraries and Features
 
