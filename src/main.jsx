@@ -9,8 +9,8 @@ import World from './pages/World';
 import Hyperspace from './components/Hyperspace';
 
 const router = createBrowserRouter([
-  { path: '/experience', element: <Experience /> },
-  { path: '/', element: <Main /> },
+  { path: '/', element: <Experience /> },
+  { path: '/main', element: <Main /> },
   { path: '/hyperspace', element: <Hyperspace /> },
   { path: '/world', element: <World /> },
 ]);

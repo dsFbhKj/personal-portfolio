@@ -6,4 +6,4 @@ const Hyperspace = () => {
   )
 }
 
-export default Hyperspace;
+export default Hyperspace

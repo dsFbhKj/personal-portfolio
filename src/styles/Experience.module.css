@@ -1,0 +1,13 @@
+canvas{
+    min-height: 100vh;
+    min-width: 100vh;
+    overflow:hidden;
+}
+
+.container {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
