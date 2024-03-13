@@ -1,12 +1,14 @@
 import { useSpring, animated } from '@react-spring/web'; //imported animation for react-spring
 import AOS from 'aos'; //need both the import
 import 'aos/dist/aos.css'; //and css for AOS to work
-import { useRef, useEffect } from 'react';
+import { 
+  // useRef,
+   useEffect } from 'react';
 import logo from '/logo.png';
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
+// import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 
 export default function Main() {
-  const parallax = useRef<IParallax>(null)
+  // const parallax = useRef < IParallax > null;
   useEffect(() => {
     AOS.init({});
   }, []);
@@ -14,7 +16,7 @@ export default function Main() {
   return (
     <>
       <div className='navbar bg-neutral text-neutral-content flex justify-between px-4'>
-      {/* NavBar */}
+        {/* NavBar */}
         <img src={logo} alt={'brand logo'} width={50} className='logo mr-4' />
         <button
           className='btn btn-ghost text-xl'
@@ -91,7 +93,7 @@ export default function Main() {
           </li>
         </ul>
 
-        <div style={{ width: '100%', height: '100%', background: '#253237' }}>
+        {/* <div style={{ width: '100%', height: '100%', background: '#253237' }}>
       <Parallax ref={parallax} pages={3}>
         <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
         <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
@@ -194,7 +196,7 @@ export default function Main() {
           <img src={url('clients-main')} style={{ width: '40%' }} />
         </ParallaxLayer>
       </Parallax>
-    </div>
+    </div> */}
       </div>
     </>
   );
