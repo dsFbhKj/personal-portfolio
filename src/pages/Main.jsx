@@ -5,8 +5,10 @@ import { useEffect } from 'react';
 import logo from '/logo.png';
 import React, { useRef } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import styles from '../styles/Main.module.css';
 
-// Little helpers ...
+//Song Intergations for backg?
+
 const url = (name, wrap = false) =>
   `${
     wrap ? 'url(' : ''
@@ -21,7 +23,7 @@ export default function Main() {
   }, []);
 
   return (
-    <>
+    <div className={styles}>
       <div className='navbar bg-neutral text-neutral-content flex justify-between px-4'>
         {/* NavBar */}
         <img src={logo} alt={'brand logo'} width={50} className='logo mr-4' />
@@ -257,6 +259,6 @@ export default function Main() {
           </ParallaxLayer>
         </Parallax>
       </div>
-    </>
+    </div>
   );
 }

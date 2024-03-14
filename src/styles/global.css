@@ -31,11 +31,11 @@ body {
 
 @layer base {
   @font-face {
-    font-family: "Playfair Display", serif;
+    font-family: "PlayfairDisplay", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap')
+    src: url('/public/fonts/PlayfairDisplay-VariableFont_wght.ttf')
   }
 }
 
