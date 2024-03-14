@@ -1,9 +1,10 @@
 import React from 'react'
 import logo from '/logo.png';
+import styles from '../styles/World.module.css';
 
 const World = () => {
   return (
-    <>
+    <div className={styles}>
       <div className='navbar bg-neutral text-neutral-content flex justify-between px-4'>
         <img src={logo} alt={'brand logo'} width={50} className='logo mr-4' />
         <button className='btn btn-ghost text-xl'>Georgiana Barefield</button>
@@ -73,7 +74,9 @@ const World = () => {
           </li>
         </ul>
       </div>
-    </>
+
+
+    </div>
   );
 }
 
