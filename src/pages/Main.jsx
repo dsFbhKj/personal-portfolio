@@ -1,10 +1,8 @@
-import { useSpring, animated } from '@react-spring/web';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 import styles from '../styles/Main.module.css';
 import logo from '/logo.png';
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 // Little helpers ...

@@ -1,13 +1,28 @@
-import React from 'react'
-import logo from '/logo.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import styles from '../styles/World.module.css';
+import logo from '/logo.png';
+import React, { useRef, useEffect } from 'react';
 
 const World = () => {
+    useEffect(() => {
+      AOS.init({});
+    }, []);
+
   return (
-    <div className={styles}>
+    <>
       <div className='navbar bg-neutral text-neutral-content flex justify-between px-4'>
+        {/* NavBar */}
         <img src={logo} alt={'brand logo'} width={50} className='logo mr-4' />
-        <button className='btn btn-ghost text-xl'>Georgiana Barefield</button>
+        <button
+          className='btn btn-ghost text-xl'
+          data-aos='zoom-in-down'
+          data-aos-duration='3000'
+        >
+          Georgiana Barefield
+        </button>
+
+        {/* Menu */}
         <ul className='menu bg-neutral lg:menu-horizontal rounded-box flex'>
           <li className='ml-auto'>
             <a href='/world' className='hover:text-blue-500'>
@@ -74,9 +89,9 @@ const World = () => {
           </li>
         </ul>
       </div>
+    {/* THE UNIVERSE */}
 
-
-    </div>
+    </>
   );
 }
 
