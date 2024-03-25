@@ -16,6 +16,10 @@ import { useRoute, useLocation } from 'wouter';
 import { easing, geometry } from 'maath';
 import { suspend } from 'suspend-react';
 
+extend(geometry);
+const regular = import('@pmndrs/assets/fonts/inter_regular.woff');
+const medium = import('@pmndrs/assets/fonts/inter_medium.woff');
+
 export default function World() {
   useEffect(() => {
     AOS.init({});
