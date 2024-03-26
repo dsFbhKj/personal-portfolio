@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import styles from '../styles/World.module.css';
+// import styles from '../styles/World.module.css';
 import logo from '/logo.png';
 import React, { useEffect, } from 'react';
 
@@ -69,7 +69,7 @@ export default function World() {
             </a>
           </li>
           <li className='ml-4'>
-            <a href='/' className='hover:text-blue-500'>
+            <a href='/experience' className='hover:text-blue-500'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='h-5 w-5 inline-block mr-1'

@@ -6,9 +6,11 @@ import Experience from './components/Experience';
 import Main from './pages/Main';
 import World from './pages/World';
 import Hyperspace from './components/Hyperspace';
+import Landing from './pages/Landing';
 
 const router = createBrowserRouter([
-  { path: '/', element: <Experience /> },
+  { path: '/', element: <Landing /> },
+  { path: '/experience', element: <Experience /> },
   { path: '/main', element: <Main /> },
   { path: '/hyperspace', element: <Hyperspace /> },
   { path: '/world', element: <World /> },

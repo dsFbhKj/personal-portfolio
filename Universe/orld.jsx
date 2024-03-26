@@ -85,7 +85,7 @@ export default function World() {
             </a>
           </li>
           <li className='ml-4'>
-            <a href='/' className='hover:text-blue-500'>
+            <a href='/experience' className='hover:text-blue-500'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='h-5 w-5 inline-block mr-1'

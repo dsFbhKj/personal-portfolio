@@ -49,7 +49,7 @@ function Root() {
         <a
           style={{ position: 'absolute', top: 40, left: 40, fontSize: '13px' }}
           href='#'
-          onClick={() => setLocation('/')}
+          onClick={() => setLocation('/world')}
         >
           {params ? '< back' : 'double click to enter portal'}
         </a>
