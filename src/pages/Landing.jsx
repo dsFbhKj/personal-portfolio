@@ -14,7 +14,10 @@ const Landing = () => {
               development. To get started on your journey of imagination and
               innovation, simply click the button below. Let's explore together!
             </p>
-            <p>Want to learn more?</p>
+            <button className='btn btn-neutral'>
+              <a href='/main'>Begin</a>
+            </button>
+            <p className='mt-5'>Want to learn more?</p>
             <div className='flex justify-center items-center space-x-4 mb-5 mt-5'>
               <a
                 href='https://www.linkedin.com/in/georgibarefield'
@@ -38,10 +41,6 @@ const Landing = () => {
                 <FaYoutube size='1.75rem' color='red' />
               </a>
             </div>
-
-            <button className='btn btn-neutral'>
-              <a href='/main'>Begin</a>
-            </button>
           </div>
         </div>
       </div>
