@@ -42,9 +42,20 @@ export default function Avatar(props) {
   });
 
   useEffect(() => {
-    actions[animation].reset().fadeIn(0.5).play();
+    try {
+      actions[animation]
+        .reset()
+        .fadeIn(0.5)
+        .play();
+    } catch (error) {
+      console.error('Error initializing animations:', error);
+    }
     return () => {
-      actions[animation].reset().fadeOut(0.5);
+      try {
+        actions[animation].reset().fadeOut(0.5);
+      } catch (error) {
+        console.error('Error cleaning up animations:', error);
+      }
     };
   }, [animation]);
 
