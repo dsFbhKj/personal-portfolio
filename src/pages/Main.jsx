@@ -1,6 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import styles from '../styles/Main.module.css';
+import '../styles/Main.module.css';
 import logo from '/logo.png';
 import React, { useRef, useEffect } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';

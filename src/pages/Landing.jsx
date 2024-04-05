@@ -8,15 +8,21 @@ const Landing = () => {
         <div className='hero-overlay bg-opacity-60'></div>
         <div className='hero-content text-center text-neutral-content'>
           <div className='max-w-md'>
-            <h1 className='mb-7 text-7xl font-bold'>Georgiana Barefield</h1>
+            <h1 className='mb-7 text-7xl font-bold flex items-stretch whitespace-nowrap justify-center'>
+              Georgiana Barefield
+            </h1>
             <p className='mb-7'>
               Hi there! Welcome to my portfolio, where creativity meets
               development. To get started on your journey of imagination and
               innovation, simply click the button below. Let's explore together!
             </p>
-            <button className='btn btn-neutral'>
-              <a href='/main'>Begin</a>
-            </button>
+            <a
+              role='button'
+              href='/main'
+              className='btn btn-neutral btn-active bg-orange-500'
+            >
+              Begin
+            </a>
             <p className='mt-5'>Want to learn more?</p>
             <div className='flex justify-center items-center space-x-4 mb-5 mt-5'>
               <a
