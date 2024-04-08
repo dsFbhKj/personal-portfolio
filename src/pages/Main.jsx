@@ -99,10 +99,61 @@ export default function Main() {
           </li>
         </ul>
       </div>
+
+      {/* TOP INFO */}
+      <div>
+        <h1>Georgiana Barefield</h1>
+        <p>
+          I am a highly motivated and results-oriented aspiring Full-Stack Web
+          Developer with a passion for creating user-friendly and effective web
+          applications. Through a combination of academic coursework,
+          internships, and extracurricular activities, I have honed my technical
+          skills in programming languages like JavaScript, and Python, and
+          frameworks like Next.js and Node.js. I am also proficient in UI/UX
+          design using Figma and wireframing techniques. My strong work ethic,
+          leadership abilities, and dedication to building inclusive interfaces
+          make me a valuable asset to any team.
+        </p>
+      </div>
+      <div>
+        <section>
+          <div>
+            <h1>Career Summary</h1>
+            <p>Info</p>
+          </div>
+          <div>
+            <h1>Skills and Education Required</h1>
+            <p>Info</p>
+          </div>
+          <div>
+            <h1>Future Job Outlook</h1>
+            <p>Info</p>
+          </div>
+        </section>
+        {/* Vertical Slideshow */}
+      </div>
+      
+      <div>
+        <h1>My Experience</h1>
+        <section>
+          <h1>Skills</h1>
+        </section>
+        <section>
+          <h1>Projects</h1>
+        </section>
+        <section>
+          {/* Social Media Links */}
+        </section>
+      </div>
+
+      <div>
+        {/* Contact Form */}
+      </div>
+
       {/* Paralax Scroll */}
       <div style={{ width: '100%', height: '100%', background: '#253237' }}>
         <Parallax ref={parallax} pages={3}>
-          <ParallaxLayer
+          {/* <ParallaxLayer
             offset={1}
             speed={1}
             style={{ backgroundColor: '#805E73' }}
@@ -132,7 +183,7 @@ export default function Main() {
               src={url('satellite4')}
               style={{ width: '15%', marginLeft: '70%' }}
             />
-          </ParallaxLayer>
+          </ParallaxLayer> */}
 
           <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
             <img
@@ -193,7 +244,7 @@ export default function Main() {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer
+          {/* <ParallaxLayer
             offset={2.5}
             speed={-0.4}
             style={{
@@ -253,7 +304,7 @@ export default function Main() {
             onClick={() => parallax.current.scrollTo(0)}
           >
             <img src={url('clients-main')} style={{ width: '40%' }} />
-          </ParallaxLayer>
+          </ParallaxLayer> */}
         </Parallax>
       </div>
     </>
