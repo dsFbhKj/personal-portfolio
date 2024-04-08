@@ -99,61 +99,10 @@ export default function Main() {
           </li>
         </ul>
       </div>
-
-      {/* TOP INFO */}
-      <div>
-        <h1>Georgiana Barefield</h1>
-        <p>
-          I am a highly motivated and results-oriented aspiring Full-Stack Web
-          Developer with a passion for creating user-friendly and effective web
-          applications. Through a combination of academic coursework,
-          internships, and extracurricular activities, I have honed my technical
-          skills in programming languages like JavaScript, and Python, and
-          frameworks like Next.js and Node.js. I am also proficient in UI/UX
-          design using Figma and wireframing techniques. My strong work ethic,
-          leadership abilities, and dedication to building inclusive interfaces
-          make me a valuable asset to any team.
-        </p>
-      </div>
-      <div>
-        <section>
-          <div>
-            <h1>Career Summary</h1>
-            <p>Info</p>
-          </div>
-          <div>
-            <h1>Skills and Education Required</h1>
-            <p>Info</p>
-          </div>
-          <div>
-            <h1>Future Job Outlook</h1>
-            <p>Info</p>
-          </div>
-        </section>
-        {/* Vertical Slideshow */}
-      </div>
-      
-      <div>
-        <h1>My Experience</h1>
-        <section>
-          <h1>Skills</h1>
-        </section>
-        <section>
-          <h1>Projects</h1>
-        </section>
-        <section>
-          {/* Social Media Links */}
-        </section>
-      </div>
-
-      <div>
-        {/* Contact Form */}
-      </div>
-
       {/* Paralax Scroll */}
       <div style={{ width: '100%', height: '100%', background: '#253237' }}>
         <Parallax ref={parallax} pages={3}>
-          {/* <ParallaxLayer
+          <ParallaxLayer
             offset={1}
             speed={1}
             style={{ backgroundColor: '#805E73' }}
@@ -183,7 +132,7 @@ export default function Main() {
               src={url('satellite4')}
               style={{ width: '15%', marginLeft: '70%' }}
             />
-          </ParallaxLayer> */}
+          </ParallaxLayer>
 
           <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
             <img
@@ -244,29 +193,6 @@ export default function Main() {
             />
           </ParallaxLayer>
 
-          {/* <ParallaxLayer
-            offset={2.5}
-            speed={-0.4}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              pointerEvents: 'none',
-            }}
-          >
-            <img src={url('earth')} style={{ width: '60%' }} />
-          </ParallaxLayer>
-
-          <ParallaxLayer
-            offset={2}
-            speed={-0.3}
-            style={{
-              backgroundSize: '80%',
-              backgroundPosition: 'center',
-              backgroundImage: url('clients', true),
-            }}
-          />
-
           <ParallaxLayer
             offset={0}
             speed={0.1}
@@ -277,20 +203,74 @@ export default function Main() {
               justifyContent: 'center',
             }}
           >
-            <img src={url('server')} style={{ width: '20%' }} />
+            {/* TOP INFO */}
+            <div>
+              <h1 className='flex justify-center'>Georgiana Barefield</h1>
+              <p className='flex justify-center items-center overflow-y-auto '>
+                I am a highly motivated and results-oriented aspiring Full-Stack
+                Web Developer with a passion for creating user-friendly and
+                effective web applications. Through a combination of academic
+                coursework, internships, and extracurricular activities, I have
+                honed my technical skills in programming languages like
+                JavaScript, and Python, and frameworks like Next.js and Node.js.
+                I am also proficient in UI/UX design using Figma and wireframing
+                techniques. My strong work ethic, leadership abilities, and
+                dedication to building inclusive interfaces make me a valuable
+                asset to any team.
+              </p>
+            </div>
           </ParallaxLayer>
 
           <ParallaxLayer
             offset={1}
             speed={0.1}
-            onClick={() => parallax.current.scrollTo(2)}
+            // onClick={() => parallax.current.scrollTo(2)}
             style={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
             }}
           >
-            <img src={url('bash')} style={{ width: '40%' }} />
+            <div>
+              <section>
+                <div role='tablist' className='tabs tabs-bordered'>
+                  <input
+                    type='radio'
+                    name='my_tabs_1'
+                    role='tab'
+                    className='tab'
+                    aria-label='Career Summary'
+                  />
+                  <div role='tabpanel' className='tab-content p-10'>
+                    <p>Info 1</p>
+                  </div>
+
+                  <input
+                    type='radio'
+                    name='my_tabs_1'
+                    role='tab'
+                    className='tab'
+                    aria-label='Skills and Education Required'
+                    checked
+                  />
+                  <div role='tabpanel' className='tab-content p-10'>
+                    <p>Info 2</p>
+                  </div>
+
+                  <input
+                    type='radio'
+                    name='my_tabs_1'
+                    role='tab'
+                    className='tab'
+                    aria-label='Future Job Outlook'
+                  />
+                  <div role='tabpanel' className='tab-content p-10'>
+                    <p>Info 3</p>
+                  </div>
+                </div>
+              </section>
+              {/* Vertical Slideshow */}
+            </div>
           </ParallaxLayer>
 
           <ParallaxLayer
@@ -303,8 +283,34 @@ export default function Main() {
             }}
             onClick={() => parallax.current.scrollTo(0)}
           >
-            <img src={url('clients-main')} style={{ width: '40%' }} />
-          </ParallaxLayer> */}
+            {/* MID INFO */}
+            <div>
+              <h1 className='flex justify-center'>My Experience</h1>
+              <section>
+                <div className='stats stats-vertical shadow'>
+                  <div className='stat'>
+                    Skills
+                    <div className='stat-title'>HTML & CSS</div>
+                    <div className='stat-value'>98%</div>
+                  </div>
+
+                  <div className='stat'>
+                    <div className='stat-title'>Javascript</div>
+                    <div className='stat-value'>85%</div>
+                  </div>
+
+                  <div className='stat'>
+                    <div className='stat-title'>Python</div>
+                    <div className='stat-value'>76%</div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <h1>Projects</h1>
+              </section>
+              <section>{/* Social Media Links */}</section>
+            </div>
+          </ParallaxLayer>
         </Parallax>
       </div>
     </>
