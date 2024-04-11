@@ -99,6 +99,7 @@ export default function Main() {
           </li>
         </ul>
       </div>
+
       {/* Paralax Scroll */}
       <div style={{ width: '100%', height: '100%', background: '#253237' }}>
         <Parallax ref={parallax} pages={3}>
@@ -188,7 +189,7 @@ export default function Main() {
             onClick={() => parallax.current.scrollTo(1)}
           >
             {/* TOP INFO */}
-            <div className='flex flex-col items-center justify-center h-full'>
+            <div className='flex flex-col items-center justify-center h-full text-white'>
               <h1 className='text-center mb-4'>Georgiana Barefield</h1>
               <p className='max-w-lg text-center'>
                 I am a highly motivated and results-oriented aspiring Full-Stack
@@ -207,6 +208,7 @@ export default function Main() {
             offset={1}
             speed={0.1}
             // onClick={() => parallax.current.scrollTo(2)}
+            className='text-white'
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -220,7 +222,7 @@ export default function Main() {
                     type='radio'
                     name='my_tabs_1'
                     role='tab'
-                    className='tab'
+                    className='tab text-white'
                     aria-label='Career Summary'
                   />
                   <div role='tabpanel' className='tab-content p-10'>
@@ -241,7 +243,7 @@ export default function Main() {
                     type='radio'
                     name='my_tabs_1'
                     role='tab'
-                    className='tab'
+                    className='tab text-white'
                     aria-label='Skills and Education Required'
                     checked
                   />
@@ -251,7 +253,7 @@ export default function Main() {
                     </h1>
                     <p>
                       HTML, CSS, Javascript, Front-end Frameworks(REACT,
-                      ANGULAR), Back-End Languages (PYTHON, JAVA), Databases
+                      ANGULAR), Back-End Languages (Python, Java), Databases
                       (SQL, MongoDB).
                     </p>
                     <h1>
@@ -272,7 +274,7 @@ export default function Main() {
                     type='radio'
                     name='my_tabs_1'
                     role='tab'
-                    className='tab'
+                    className='tab text-white'
                     aria-label='Future Job Outlook'
                   />
                   <div role='tabpanel' className='tab-content p-10'>
@@ -290,6 +292,29 @@ export default function Main() {
                 </div>
               </section>
               {/* Vertical Slideshow */}
+              <div className='h-96 carousel carousel-vertical rounded-box '>
+                <div className='carousel-item h-full'>
+                  <img src='https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg' />
+                </div>
+                <div className='carousel-item h-full'>
+                  <img src='https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg' />
+                </div>
+                <div className='carousel-item h-full'>
+                  <img src='https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg' />
+                </div>
+                <div className='carousel-item h-full'>
+                  <img src='https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg' />
+                </div>
+                <div className='carousel-item h-full'>
+                  <img src='https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg' />
+                </div>
+                <div className='carousel-item h-full'>
+                  <img src='https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg' />
+                </div>
+                <div className='carousel-item h-full'>
+                  <img src='https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg' />
+                </div>
+              </div>
             </div>
           </ParallaxLayer>
 
