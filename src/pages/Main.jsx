@@ -123,17 +123,6 @@ export default function Main() {
             }}
           />
 
-          <ParallaxLayer
-            offset={1.3}
-            speed={-0.3}
-            style={{ pointerEvents: 'none' }}
-          >
-            <img
-              src={url('satellite4')}
-              style={{ width: '15%', marginLeft: '70%' }}
-            />
-          </ParallaxLayer>
-
           <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
             <img
               src={url('cloud')}
@@ -197,26 +186,19 @@ export default function Main() {
             offset={0}
             speed={0.1}
             onClick={() => parallax.current.scrollTo(1)}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
           >
             {/* TOP INFO */}
-            <div>
-              <h1 className='flex justify-center'>Georgiana Barefield</h1>
-              <p className='flex justify-center items-center overflow-y-auto '>
+            <div className='flex flex-col items-center justify-center h-full'>
+              <h1 className='text-center mb-4'>Georgiana Barefield</h1>
+              <p className='max-w-lg text-center'>
                 I am a highly motivated and results-oriented aspiring Full-Stack
                 Web Developer with a passion for creating user-friendly and
                 effective web applications. Through a combination of academic
                 coursework, internships, and extracurricular activities, I have
                 honed my technical skills in programming languages like
-                JavaScript, and Python, and frameworks like Next.js and Node.js.
+                JavaScript and Python, and frameworks like Next.js and Node.js.
                 I am also proficient in UI/UX design using Figma and wireframing
-                techniques. My strong work ethic, leadership abilities, and
-                dedication to building inclusive interfaces make me a valuable
-                asset to any team.
+                techniques.
               </p>
             </div>
           </ParallaxLayer>
@@ -232,7 +214,7 @@ export default function Main() {
             }}
           >
             <div>
-              <section>
+              <section className='flex justify-center'>
                 <div role='tablist' className='tabs tabs-bordered'>
                   <input
                     type='radio'
@@ -242,7 +224,17 @@ export default function Main() {
                     aria-label='Career Summary'
                   />
                   <div role='tabpanel' className='tab-content p-10'>
-                    <p>Info 1</p>
+                    <h1>Full-Stack Web Developer</h1>
+                    <p
+                      className='flex justify-center items-center overflow-y-auto'
+                      style={{ maxWidth: '800px' }}
+                    >
+                      Full-stack web developers are responsible for both the
+                      front-end (user-interface) and back-end (server-side)
+                      development of websites and web applications. They work
+                      with a variety of technologies to create interactive and
+                      functional web experiences.
+                    </p>
                   </div>
 
                   <input
@@ -254,7 +246,26 @@ export default function Main() {
                     checked
                   />
                   <div role='tabpanel' className='tab-content p-10'>
-                    <p>Info 2</p>
+                    <h1>
+                      <strong>Technical Skills</strong>
+                    </h1>
+                    <p>
+                      HTML, CSS, Javascript, Front-end Frameworks(REACT,
+                      ANGULAR), Back-End Languages (PYTHON, JAVA), Databases
+                      (SQL, MongoDB).
+                    </p>
+                    <h1>
+                      <strong>Soft Skills</strong>
+                    </h1>
+                    <p>Teamwork, Problem-Solving, and Communication.</p>
+                    <h1>
+                      <strong>Educational Requirements</strong>
+                    </h1>
+                    <p>
+                      Computer Science Degree, Coding Boot Camp Certificate
+                      (although some companies may consider relevant experience
+                      over formal education).
+                    </p>
                   </div>
 
                   <input
@@ -265,7 +276,16 @@ export default function Main() {
                     aria-label='Future Job Outlook'
                   />
                   <div role='tabpanel' className='tab-content p-10'>
-                    <p>Info 3</p>
+                    <p
+                      className='flex justify-center items-center overflow-y-auto'
+                      style={{ maxWidth: '800px' }}
+                    >
+                      The job outlook for web developers is projected to be much
+                      faster than average, with a growth rate of 13% from 2020
+                      to 2030 (bureau of labor statistics). The median annual
+                      wage for web developers was $87,370 in may 2022 (bureau of
+                      labor statistics)
+                    </p>
                   </div>
                 </div>
               </section>

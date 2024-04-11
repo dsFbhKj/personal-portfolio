@@ -19,7 +19,7 @@ const Landing = () => {
             <a
               role='button'
               href='/main'
-              className='btn btn-neutral btn-active bg-orange-500'
+              className='btn btn-neutral btn-active bg-pink-500'
             >
               Begin
             </a>
