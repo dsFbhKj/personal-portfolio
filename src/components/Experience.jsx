@@ -13,15 +13,24 @@ import styles from '../styles/Experience.module.css';
 const Experience = () => {
   const { animation } = useControls({
     animation: {
-      value: 'Hello',
-      options: ['Hello', 'Standing', 'Falling'],
+      value: 'Sitting',
+      options: ['Sitting', 'Hello', 'Standing', 'Falling'],
     },
   });
   return (
     <>
       <div className='navbar bg-neutral text-neutral-content flex justify-between px-4'>
+        {/* NavBar */}
         <img src={logo} alt={'brand logo'} width={50} className='logo mr-4' />
-        <button className='btn btn-ghost text-xl'>Georgiana Barefield</button>
+        <button
+          className='btn btn-ghost text-xl'
+          data-aos='zoom-in-down'
+          data-aos-duration='3000'
+        >
+          Georgiana Barefield
+        </button>
+
+        {/* Menu */}
         <ul className='menu bg-neutral lg:menu-horizontal rounded-box flex'>
           <li className='ml-auto'>
             <a href='/world' className='hover:text-blue-500'>
@@ -88,12 +97,15 @@ const Experience = () => {
           </li>
         </ul>
       </div>
+
+      {/* Avatar */}
       <Canvas
         className={styles.container}
         shadows
         camera={{ position: [0, 2, 5], fov: 30 }}
       >
         <color attach='background' args={['#ececec']} />
+
         <OrbitControls />
         <Sky />
         <Environment preset='sunset' />
@@ -107,17 +119,17 @@ const Experience = () => {
             color='#000000'
           />
           <Avatar animation={animation} />
-          {/* {animation === 'Hello' && (
-          <mesh scale={[0.8, 0.5, 0.8,]} position-y={-0.25}>
+          {animation === "Sitting" && (
+          <mesh scale={[0.8, 0.5, 0.8]} position-y={0.25}>
             <boxGeometry />
-            <meshStandardMaterial color='white' />
+            <meshStandardMaterial color="white" />
           </mesh>
-        )} */}
-          <mesh scale={5} rotation-x={-Math.PI * 0.5} position-y={-0.25}>
-            <planeGeometry />
-            <meshStandardMaterial color='white' />
-          </mesh>
-        </group>
+        )}
+        <mesh scale={5} rotation-x={-Math.PI * 0.5} position-y={-0.001}>
+          <planeGeometry />
+          <meshStandardMaterial color="white" />
+        </mesh>
+      </group>
       </Canvas>
     </>
   );

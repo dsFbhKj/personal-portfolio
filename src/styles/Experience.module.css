@@ -1,4 +1,4 @@
-canvas{
+/* canvas{
     min-height: 100vh;
     min-width: 100vh;
     overflow:hidden;
@@ -10,4 +10,13 @@ canvas{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+} */
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
 }
