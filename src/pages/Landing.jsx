@@ -4,7 +4,8 @@ import { FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
 const Landing = () => {
   return (
     <>
-      <div className='hero min-h-screen bg-gradient-to-br from-pink-600 via-red-700 to-yellow-300'>
+      {/* Make landing a portal */}
+      <div className='hero min-h-screen bg-gradient-radial bg-radial-circle from-pink-600 to-yellow-300 via-red-700'>
         <div className='hero-overlay bg-opacity-60'></div>
         <div className='hero-content text-center text-neutral-content'>
           <div className='max-w-md'>

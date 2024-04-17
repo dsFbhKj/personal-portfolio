@@ -283,7 +283,10 @@ export default function Main() {
 
       {/* Bottom Nav */}
       {/* Make icons bigger and remove padding */}
-      <div className='btm-nav btm-nav-md static'>
+      <div
+        className='btm-nav btm-nav-md static'
+        style={{ backgroundColor: '#f0f0f0' }}
+      >
         <li
           role='button'
           className='tooltip hover:active flex justify-center'

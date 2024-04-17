@@ -42,7 +42,8 @@ export default function World() {
 
       {/* Bottom Nav */}
       {/* Make icons bigger and remove padding */}
-      <div className='btm-nav btm-nav-md fixed'>
+      <div
+        className='btm-nav btm-nav-md fixed' style={{backgroundColor:'#f0f0f0'}}>
         <li
           role='button'
           className='tooltip hover:active flex justify-center'
