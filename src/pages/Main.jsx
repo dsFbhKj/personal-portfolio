@@ -80,7 +80,7 @@ export default function Main() {
             <a href='/experience' className='hover:text-blue-500'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-5 w-5 inline-block mr-1'
+                className='h-5 w-5'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
@@ -89,7 +89,7 @@ export default function Main() {
                   strokeLinecap='round'
                   strokeLinejoin='round'
                   strokeWidth='2'
-                  d='M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+                  d='M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'
                 />
               </svg>
               <span className='badge badge-sm badge-warning text-base hover:text-blue-500'>
@@ -308,7 +308,7 @@ export default function Main() {
                 <img src='https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg' />
               </div>
               <div className='carousel-item h-full'>
-              <img src='https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg' />
+                <img src='https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg' />
               </div>
               <div className='carousel-item h-full'>
                 <img src='https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg' />
@@ -317,7 +317,6 @@ export default function Main() {
                 <img src='https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg' />
               </div>
             </div>
-            
           </ParallaxLayer>
 
           <ParallaxLayer
