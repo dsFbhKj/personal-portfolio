@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist",
-    "build": "vite build",
-    "preview": "vite preview"
+    "deploy": "yarn gh-pages -d dist",
+    "build": "yarn vite build",
+    "preview": "yarn vite preview"
   },
   "keywords": [],
   "author": "Georgiana Barefield (https://github.com/gbaref949)",
