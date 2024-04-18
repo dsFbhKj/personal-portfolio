@@ -55,10 +55,7 @@ const Experience = () => {
 
       {/* Bottom Nav */}
       {/* Make icons bigger and remove padding */}
-      <div
-        className='btm-nav btm-nav-md fixed'
-        style={{ backgroundColor: '#f0f0f0' }}
-      >
+      <div className='btm-nav btm-nav-md fixed'>
         <li
           role='button'
           className='tooltip hover:active flex justify-center'
@@ -67,7 +64,7 @@ const Experience = () => {
           <a href='/world'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              fill='none'
+              fill='#000'
               viewBox='0 0 24 24'
               strokeWidth='1.5'
               stroke='currentColor'
@@ -90,7 +87,7 @@ const Experience = () => {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5'
-              fill='none'
+              fill='#000'
               viewBox='0 0 24 24'
               stroke='currentColor'
             >
@@ -111,7 +108,7 @@ const Experience = () => {
           <a href='/experience'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              fill='none'
+              fill='#000'
               viewBox='0 0 24 24'
               stroke-width='1.5'
               stroke='currentColor'
