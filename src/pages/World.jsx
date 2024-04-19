@@ -54,7 +54,7 @@ export default function World() {
               fill='#000'
               viewBox='0 0 24 24'
               strokeWidth='1.5'
-              stroke='currentColor'
+              stroke='#000'
               className='w-4 h-4 inline-block mr-1'
             >
               <path
@@ -74,9 +74,9 @@ export default function World() {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5'
-              fill='#000'
+              fill='none'
               viewBox='0 0 24 24'
-              stroke='currentColor'
+              stroke='#000'
             >
               <path
                 strokeLinecap='round'
@@ -95,10 +95,10 @@ export default function World() {
           <a href='/experience'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              fill='#000'
+              fill='none'
               viewBox='0 0 24 24'
               stroke-width='1.5'
-              stroke='currentColor'
+              stroke='#000'
               class='w-6 h-6'
             >
               <path
