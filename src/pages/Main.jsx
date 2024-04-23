@@ -223,13 +223,13 @@ export default function Main() {
             {/* Vertical Slideshow */}
             <div className='h-96 carousel carousel-vertical rounded-box '>
               <div className='carousel-item h-full'>
+                <img src={me} />
+              </div>
+              <div className='carousel-item h-full'>
                 <img src={meinline} />
               </div>
               <div className='carousel-item h-full'>
                 <img src={mewinner} />
-              </div>
-              <div className='carousel-item h-full'>
-                <img src={me} />
               </div>
               <div className='carousel-item h-full'>
                 <img src={meofficer} />
