@@ -4,7 +4,13 @@ import '../styles/Main.module.css';
 import logo from '/logo.png';
 import React, { useRef, useEffect } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-
+import me from '/images/me.png';
+import mebear from '/images/mebear.png';
+import meinline from '/images/meinline.png';
+import meofficer from '/images/meofficer.png';
+import mewinner from '/images/mewinner.png';
+import pic2 from '/images/pic2.png';
+import pic3 from '/images/pic3.png';
 // Little helpers ...
 const url = (name, wrap = false) =>
   `${
@@ -217,25 +223,25 @@ export default function Main() {
             {/* Vertical Slideshow */}
             <div className='h-96 carousel carousel-vertical rounded-box '>
               <div className='carousel-item h-full'>
-                <img src='https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg' />
+                <img src={meinline} />
               </div>
               <div className='carousel-item h-full'>
-                <img src='https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg' />
+                <img src={mewinner} />
               </div>
               <div className='carousel-item h-full'>
-                <img src='https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg' />
+                <img src={me} />
               </div>
               <div className='carousel-item h-full'>
-                <img src='https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg' />
+                <img src={meofficer} />
               </div>
               <div className='carousel-item h-full'>
-                <img src='https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg' />
+                <img src={pic2} />
               </div>
               <div className='carousel-item h-full'>
-                <img src='https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg' />
+                <img src={pic3} />
               </div>
               <div className='carousel-item h-full'>
-                <img src='https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg' />
+                <img src={mebear} />
               </div>
             </div>
           </ParallaxLayer>
