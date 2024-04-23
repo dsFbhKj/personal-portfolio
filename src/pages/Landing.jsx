@@ -1,4 +1,5 @@
 import React from 'react';
+import me from '/me.mp4';
 import { FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
 
 const Landing = () => {
@@ -17,14 +18,14 @@ const Landing = () => {
               development. To get started on your journey of imagination and
               innovation, simply click the button below. Let's explore together!
             </p>
-            <a
-              role='button'
-              href='/world'
-              className='btn btn-neutral btn-active bg-pink-500'
-            >
-              Begin
-            </a>
-            <p className='mt-5'>Want to learn more?</p>
+            <div className='card w-65 bg-base-100 shadow-xl'>
+              <figure>
+                <video src={me} width='560' height='300' autoPlay muted loop />
+              </figure>
+            </div>
+            <p className='mt-5'>
+              <strong>Want to learn more?</strong>
+            </p>
             <div className='flex justify-center items-center space-x-4 mb-5 mt-5'>
               <a
                 href='https://www.linkedin.com/in/georgibarefield'
@@ -48,6 +49,13 @@ const Landing = () => {
                 <FaYoutube size='1.75rem' color='red' />
               </a>
             </div>
+            <a
+              role='button'
+              href='/world'
+              className='btn btn-neutral btn-active bg-pink-500'
+            >
+              Begin
+            </a>
           </div>
         </div>
       </div>
