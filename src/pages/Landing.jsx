@@ -18,44 +18,55 @@ const Landing = () => {
               development. To get started on your journey of imagination and
               innovation, simply click the button below. Let's explore together!
             </p>
-            <div className='card w-65 bg-base-100 shadow-xl'>
-              <figure>
-                <video src={me} width='560' height='300' autoPlay muted loop />
-              </figure>
+            <div className='flex justify-start items-start'>
+              <div className='card w-1/3 bg-base-100 shadow-xl mr-5'>
+                <figure>
+                  <video
+                    src={me}
+                    width='300'
+                    height='300'
+                    autoPlay
+                    muted
+                    loop
+                  />
+                </figure>
+              </div>
+              <div className='flex flex-col items-end'>
+                <p>
+                  <strong>Want to learn more?</strong>
+                </p>
+                <div className='flex items-center space-x-4 mb-5 mt-5'>
+                  <a
+                    href='https://www.linkedin.com/in/georgibarefield'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FaLinkedin size='1.75rem' color='#3a77cc' />
+                  </a>
+                  <a
+                    href='https://github.com/gbaref949'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FaGithub size='1.75rem' color='black' />
+                  </a>
+                  <a
+                    href='https://www.youtube.com/@georgiB1'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FaYoutube size='1.75rem' color='red' />
+                  </a>
+                </div>
+                <a
+                  role='button'
+                  href='/world'
+                  className='btn btn-neutral btn-active bg-pink-500'
+                >
+                  Begin
+                </a>
+              </div>
             </div>
-            <p className='mt-5'>
-              <strong>Want to learn more?</strong>
-            </p>
-            <div className='flex justify-center items-center space-x-4 mb-5 mt-5'>
-              <a
-                href='https://www.linkedin.com/in/georgibarefield'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FaLinkedin size='1.75rem' color='#3a77cc' />
-              </a>
-              <a
-                href='https://github.com/gbaref949'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FaGithub size='1.75rem' color='black' />
-              </a>
-              <a
-                href='https://www.youtube.com/@georgiB1'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FaYoutube size='1.75rem' color='red' />
-              </a>
-            </div>
-            <a
-              role='button'
-              href='/world'
-              className='btn btn-neutral btn-active bg-pink-500'
-            >
-              Begin
-            </a>
           </div>
         </div>
       </div>
