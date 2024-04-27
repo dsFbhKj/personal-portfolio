@@ -14,7 +14,7 @@ import { suspend } from 'suspend-react';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import logo from '/logo.png';
+import Logo from '/logo.png';
 
 extend(geometry);
 const regular = import('@pmndrs/assets/fonts/inter_regular.woff');
@@ -34,6 +34,7 @@ export default function World() {
         eventPrefix='client'
       >
         <color attach='background' args={['#f0f0f0']} />
+        {/* <Root/> */}
         <Frame id='01' name='room' author='Georgiana Barefield'>
           <Gltf src='fiesta_tea-transformed.glb' position={[0, -2, -3]} />
         </Frame>

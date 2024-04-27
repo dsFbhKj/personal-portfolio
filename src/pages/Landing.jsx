@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import me from '/me.mp4';
+import styles from '../styles/Landing.module.css';
 import { FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
 
+import { useTrail, a } from '@react-spring/web';
+
+const Trail = ({ open, children }) => {
+  const items = React.Children.toArray(children);
+  const trail = useTrail(items.length, {
+    config: { mass: 5, tension: 2000, friction: 200 },
+    opacity: open ? 1 : 0,
+    x: open ? 0 : 20,
+    height: open ? 110 : 0,
+    from: { opacity: 0, x: 20, height: 0 },
+  });
+  return (
+    <div>
+      {trail.map(({ height, ...style }, index) => (
+        <a.div key={index} className={styles.trailsText} style={style}>
+          <a.div style={{ height }}>{items[index]}</a.div>
+        </a.div>
+      ))}
+    </div>
+  );
+};
+
 const Landing = () => {
+  const [open, set] = useState(true);
   return (
     <>
       {/* Make landing a portal */}
@@ -10,9 +34,13 @@ const Landing = () => {
         <div className='hero-overlay bg-opacity-60'></div>
         <div className='hero-content text-center text-neutral-content'>
           <div className='max-w-md'>
-            <h1 className='mb-7 text-7xl font-bold flex items-stretch whitespace-nowrap justify-center'>
-              Georgiana Barefield
-            </h1>
+            <div onClick={() => set((state) => !state)}>
+              <Trail open={open}>
+                <span>Georgiana</span>
+                <span>Barefield</span>
+              </Trail>
+            </div>
+            {/* <h1 className='mb-7 text-7xl font-bold flex items-stretch whitespace-nowrap justify-center'>Georgiana Barefield</h1> */}
             <p className='mb-7'>
               Hi there! Welcome to my portfolio, where creativity meets
               development. To get started on your journey of imagination and

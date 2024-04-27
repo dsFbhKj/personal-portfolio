@@ -4,7 +4,7 @@
 
 *{
   box-sizing: border-box;
-  font-family: PlayfairDisplay;
+  /* font-family: PlayfairDisplay; */
 }
 
 html,
@@ -31,6 +31,7 @@ body,
 }
 
 body {
+  font-family: system-ui;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,
