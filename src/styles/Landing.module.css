@@ -7,12 +7,14 @@
   font-weight: 800;
   letter-spacing: -0.05em;
   will-change: transform, opacity;
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
 }
 
 .trailsText > div {
   padding-right: 0.05em;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container {
