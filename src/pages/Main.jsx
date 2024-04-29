@@ -38,7 +38,7 @@ export default function Main() {
           overflow: 'hidden',
         }}
       >
-      {/* THE PAGES */}
+        {/* THE PAGES */}
         <Parallax ref={parallax} pages={5}>
           <ParallaxLayer
             offset={0}
@@ -152,7 +152,7 @@ export default function Main() {
             </div>
           </ParallaxLayer>
 
-            {/* PAGE 2 */}
+          {/* PAGE 2 */}
           <ParallaxLayer
             offset={1}
             speed={0.1}
@@ -412,7 +412,7 @@ export default function Main() {
               </section>
             </div>
           </ParallaxLayer>
-          
+
           {/* PAGE 4 */}
           <ParallaxLayer offset={3} speed={-0.1}>
             <p>hiu</p>
