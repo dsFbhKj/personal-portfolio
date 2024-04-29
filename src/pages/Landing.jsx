@@ -87,7 +87,7 @@ const Landing = () => {
                 </div>
                 <a
                   role='button'
-                  href='/world'
+                  href='/hyperspace'
                   className='btn btn-neutral btn-active bg-pink-500'
                 >
                   Begin
