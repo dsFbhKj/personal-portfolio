@@ -11,6 +11,8 @@ import meofficer from '/images/meofficer.png';
 import mewinner from '/images/mewinner.png';
 import pic2 from '/images/pic2.png';
 import pic3 from '/images/pic3.png';
+import { FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
+
 // Little helpers ...
 const url = (name, wrap = false) =>
   `${
@@ -28,29 +30,47 @@ export default function Main() {
   return (
     <>
       {/* Paralax Scroll */}
-      <div style={{ width: '100%', height: '100%', background: '#253237' }}>
-        <Parallax ref={parallax} pages={3}>
-          <ParallaxLayer
-            offset={1}
-            speed={1}
-            style={{ backgroundColor: '#805E73' }}
-          />
-          <ParallaxLayer
-            offset={2}
-            speed={1}
-            style={{ backgroundColor: '#87BCDE' }}
-          />
-
+      <div
+        style={{
+          width: '100%',
+          minHeight: '100vh',
+          background: '#d0d0d0',
+          overflow: 'hidden',
+        }}
+      >
+      {/* THE PAGES */}
+        <Parallax ref={parallax} pages={5}>
           <ParallaxLayer
             offset={0}
             speed={0}
-            factor={3}
+            factor={1}
             style={{
               backgroundImage: url('stars', true),
               backgroundSize: 'cover',
             }}
           />
+          <ParallaxLayer
+            offset={1}
+            speed={1}
+            style={{ backgroundColor: '#fde047' }}
+          />
+          <ParallaxLayer
+            offset={0}
+            speed={1}
+            style={{ backgroundColor: '#B6577D' }}
+          />
+          <ParallaxLayer
+            offset={4}
+            speed={1}
+            style={{ backgroundColor: '#DB8628' }}
+          />
+          <ParallaxLayer
+            offset={2}
+            speed={1}
+            style={{ backgroundColor: '#1EB688' }}
+          />
 
+          {/* THE CLOUDS */}
           <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
             <img
               src={url('cloud')}
@@ -62,7 +82,7 @@ export default function Main() {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
+          <ParallaxLayer offset={2.75} speed={0.5} style={{ opacity: 0.1 }}>
             <img
               src={url('cloud')}
               style={{ display: 'block', width: '20%', marginLeft: '70%' }}
@@ -73,7 +93,7 @@ export default function Main() {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
+          <ParallaxLayer offset={2} speed={0.2} style={{ opacity: 0.2 }}>
             <img
               src={url('cloud')}
               style={{ display: 'block', width: '10%', marginLeft: '10%' }}
@@ -84,7 +104,7 @@ export default function Main() {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
+          <ParallaxLayer offset={3.6} speed={-0.1} style={{ opacity: 0.4 }}>
             <img
               src={url('cloud')}
               style={{ display: 'block', width: '20%', marginLeft: '60%' }}
@@ -110,6 +130,7 @@ export default function Main() {
             />
           </ParallaxLayer>
 
+          {/* PAGE 1 */}
           <ParallaxLayer
             offset={0}
             speed={0.1}
@@ -131,6 +152,7 @@ export default function Main() {
             </div>
           </ParallaxLayer>
 
+            {/* PAGE 2 */}
           <ParallaxLayer
             offset={1}
             speed={0.1}
@@ -143,7 +165,7 @@ export default function Main() {
             }}
           >
             <div>
-              <section className='flex justify-center'>
+              <section className='flex justify-center '>
                 <div role='tablist' className='tabs tabs-bordered'>
                   <input
                     type='radio'
@@ -246,6 +268,7 @@ export default function Main() {
             </div>
           </ParallaxLayer>
 
+          {/* PAGE 3 */}
           <ParallaxLayer
             offset={2}
             speed={-0}
@@ -254,7 +277,7 @@ export default function Main() {
               alignItems: 'center',
               justifyContent: 'center',
             }}
-            onClick={() => parallax.current.scrollTo(0)}
+            // onClick={() => parallax.current.scrollTo(0)}
           >
             {/* MID INFO */}
             <div>
@@ -280,16 +303,131 @@ export default function Main() {
               </section>
               <section>
                 <h1>Projects</h1>
+
+                <div className='card w-1/3 glass'>
+                  <figure>
+                    <img
+                      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
+                      alt='car!'
+                    />
+                  </figure>
+                  <div className='card-body'>
+                    <h2 className='card-title'>Project 1</h2>
+                    <p>Info</p>
+                    <div className='card-actions justify-end'>
+                      <button className='btn btn-primary'>Learn now!</button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <div className='card w-1/3 glass'>
+                  <figure>
+                    <img
+                      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
+                      alt='car!'
+                    />
+                  </figure>
+                  <div className='card-body'>
+                    <h2 className='card-title'>Project 2</h2>
+                    <p>Info</p>
+                    <div className='card-actions justify-end'>
+                      <button className='btn btn-primary'>Learn now!</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='card w-1/3 glass'>
+                  <figure>
+                    <img
+                      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
+                      alt='car!'
+                    />
+                  </figure>
+                  <div className='card-body'>
+                    <h2 className='card-title'>Project 3</h2>
+                    <p>Info</p>
+                    <div className='card-actions justify-end'>
+                      <button className='btn btn-primary'>Learn now!</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='card w-1/3 glass'>
+                  <figure>
+                    <img
+                      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
+                      alt='car!'
+                    />
+                  </figure>
+                  <div className='card-body'>
+                    <h2 className='card-title'>Project 4</h2>
+                    <p>Info</p>
+                    <div className='card-actions justify-end'>
+                      <button className='btn btn-primary'>Learn now!</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='card w-1/3 glass'>
+                  <figure>
+                    <img
+                      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
+                      alt='car!'
+                    />
+                  </figure>
+                  <div className='card-body'>
+                    <h2 className='card-title'>Project 5</h2>
+                    <p>Info</p>
+                    <div className='card-actions justify-end'>
+                      <button className='btn btn-primary'>Learn now!</button>
+                    </div>
+                  </div>
+                </div> */}
               </section>
-              <section>{/* Social Media Links */}</section>
+              <section>
+                {/* Social Media Links */}
+                <div className='flex justify-center space-x-4 mb-5 mt-5'>
+                  <a
+                    href='https://www.linkedin.com/in/georgibarefield'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FaLinkedin size='1.75rem' color='#3a77cc' />
+                  </a>
+                  <a
+                    href='https://github.com/gbaref949'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FaGithub size='1.75rem' color='black' />
+                  </a>
+                  <a
+                    href='https://www.youtube.com/@georgiB1'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FaYoutube size='1.75rem' color='red' />
+                  </a>
+                </div>
+              </section>
             </div>
+          </ParallaxLayer>
+          
+          {/* PAGE 4 */}
+          <ParallaxLayer offset={3} speed={-0.1}>
+            <p>hiu</p>
+          </ParallaxLayer>
+
+          {/* PAGE 5 */}
+          <ParallaxLayer offset={4} speed={0.1}>
+            <p>hiu</p>
           </ParallaxLayer>
         </Parallax>
       </div>
 
       {/* Bottom Nav */}
       {/* Make icons bigger and remove padding */}
-      <div className='btm-nav btm-nav-md fixed'>
+      <div className='btm-nav btm-nav-md static'>
         <li
           role='button'
           className='tooltip hover:active flex justify-center'
