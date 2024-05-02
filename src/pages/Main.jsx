@@ -303,86 +303,21 @@ export default function Main() {
               </section>
               <section>
                 <h1>Projects</h1>
-
-                <div className='card w-1/3 glass'>
+                <div className='card w-2/5 bg-base-100 shadow-xl image-full'>
                   <figure>
                     <img
                       src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
-                      alt='car!'
+                      alt='Shoes'
                     />
                   </figure>
                   <div className='card-body'>
-                    <h2 className='card-title'>Project 1</h2>
-                    <p>Info</p>
+                    <h2 className='card-title'>UWNA Internship</h2>
+                    <p>Click here to find out more</p>
                     <div className='card-actions justify-end'>
-                      <button className='btn btn-primary'>Learn now!</button>
+                      <button className='btn btn-secondary'>Click</button>
                     </div>
                   </div>
                 </div>
-
-                {/* <div className='card w-1/3 glass'>
-                  <figure>
-                    <img
-                      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
-                      alt='car!'
-                    />
-                  </figure>
-                  <div className='card-body'>
-                    <h2 className='card-title'>Project 2</h2>
-                    <p>Info</p>
-                    <div className='card-actions justify-end'>
-                      <button className='btn btn-primary'>Learn now!</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div className='card w-1/3 glass'>
-                  <figure>
-                    <img
-                      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
-                      alt='car!'
-                    />
-                  </figure>
-                  <div className='card-body'>
-                    <h2 className='card-title'>Project 3</h2>
-                    <p>Info</p>
-                    <div className='card-actions justify-end'>
-                      <button className='btn btn-primary'>Learn now!</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div className='card w-1/3 glass'>
-                  <figure>
-                    <img
-                      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
-                      alt='car!'
-                    />
-                  </figure>
-                  <div className='card-body'>
-                    <h2 className='card-title'>Project 4</h2>
-                    <p>Info</p>
-                    <div className='card-actions justify-end'>
-                      <button className='btn btn-primary'>Learn now!</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div className='card w-1/3 glass'>
-                  <figure>
-                    <img
-                      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
-                      alt='car!'
-                    />
-                  </figure>
-                  <div className='card-body'>
-                    <h2 className='card-title'>Project 5</h2>
-                    <p>Info</p>
-                    <div className='card-actions justify-end'>
-                      <button className='btn btn-primary'>Learn now!</button>
-                    </div>
-                  </div>
-                </div> */}
               </section>
               <section>
                 {/* Social Media Links */}
