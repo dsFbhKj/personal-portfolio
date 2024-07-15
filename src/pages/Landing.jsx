@@ -26,69 +26,71 @@ const Trail = ({ open, children }) => {
 };
 
 const Landing = () => {
-  const [open, set] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
+
+  const toggleOpen = () => {
+    setIsOpen((prevIsOpen) => !prevIsOpen);
+  };
+
   return (
     <>
-      {/* Make landing a portal */}
-      <div className='hero min-h-screen bg-gradient-radial bg-radial-circle from-pink-600 to-yellow-300 via-red-700'>
-        <div className='hero-overlay bg-opacity-60'></div>
-        <div className='hero-content text-center text-neutral-content'>
-          <div className='max-w-md'>
-            <div onClick={() => set((state) => !state)}>
-              <Trail open={open}>
-                <span className='whitespace-nowrap'>Georgiana Barefield</span>
+      <div className="hero min-h-screen bg-gradient-radial bg-radial-circle from-pink-600 to-yellow-300 via-red-700">
+        <div className="hero-overlay bg-opacity-60"/>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <div onClick={toggleOpen}>
+              <Trail open={isOpen}>
+                <span className="whitespace-nowrap">Georgiana Barefield</span>
               </Trail>
             </div>
-            {/* <h1 className='mb-7 text-7xl font-bold flex items-stretch whitespace-nowrap justify-center'>Georgiana Barefield</h1> */}
-            <p className='mb-10 mt-5'>
-              Hi there! Welcome to my portfolio, where creativity meets
-              development. To get started on your journey of imagination and
-              innovation, simply click the button below. Let's explore together!
+            <p className="mb-10 mt-5">
+              Welcome to my portfolio! To get started on your journey of
+              imagination and innovation, simply click the button below.
             </p>
-            <div className='flex justify-start items-start'>
-              <div className='card w-2/4 bg-base-100 shadow-xl mr-10 ml-4'>
+            <div className="flex justify-start items-start">
+              <div className="card w-2/4 bg-base-100 shadow-xl mr-10 ml-4">
                 <figure>
                   <video
                     src={me}
-                    width='300'
-                    height='300'
+                    width="300"
+                    height="300"
                     autoPlay
                     muted
                     loop
                   />
                 </figure>
               </div>
-              <div className='flex flex-col justify-around mt-10'>
+              <div className="flex flex-col justify-around mt-10">
                 <p>
                   <strong>Want to learn more?</strong>
                 </p>
-                <div className='flex justify-center space-x-4 mb-5 mt-5'>
+                <div className="flex justify-center space-x-4 mb-5 mt-5">
                   <a
-                    href='https://www.linkedin.com/in/georgibarefield'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    href="https://www.linkedin.com/in/georgibarefield"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <FaLinkedin size='1.75rem' color='#3a77cc' />
+                    <FaLinkedin size="1.75rem" color="#3a77cc" />
                   </a>
                   <a
-                    href='https://github.com/gbaref949'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    href="https://github.com/gbaref949"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <FaGithub size='1.75rem' color='black' />
+                    <FaGithub size="1.75rem" color="black" />
                   </a>
                   <a
-                    href='https://www.youtube.com/@georgiB1'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    href="https://www.youtube.com/@georgiB1"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <FaYoutube size='1.75rem' color='red' />
+                    <FaYoutube size="1.75rem" color="red" />
                   </a>
                 </div>
                 <a
-                  role='button'
-                  href='/hyperspace'
-                  className='btn btn-neutral btn-active bg-pink-500'
+                  role="button"
+                  href="/hyperspace"
+                  className="btn btn-neutral btn-active bg-pink-500"
                 >
                   Begin
                 </a>
